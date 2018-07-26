@@ -1,0 +1,496 @@
+ 
+/************************************************ ///////////////////////////////////////////////// Blog Default Styles ///////////////////////////////////////////////// *************************************************/
+ body{
+     font-size: 16px;
+     line-height: 30px;
+     font-family: "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+}
+ .preload * {
+     -webkit-transition: none !important;
+     -moz-transition: none !important;
+     -ms-transition: none !important;
+     -o-transition: none !important;
+     transition: none !important;
+}
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+ p{
+    font-size: 14px;
+    padding: 0;
+    margin: 0
+}
+ img{
+    width: 100%;
+}
+ h1{
+     font-size: 25px;
+     color: #EC6D82;
+}
+ ul, ul li{
+     padding: 0;
+     margin: 0;
+     list-style: none 
+}
+ img{
+    width: 100%
+}
+ a:active, input, textarea, a:focus, a[href], a:hover{
+     outline: none !important;
+     text-decoration: none;
+}
+ .persist-area{
+     width: 100%;
+     float: left 
+}
+.no-padding {padding: 0}
+.no-margin {margin: 0}
+/****************************************/
+/*animation button*/
+/****************************************/
+ .button-danger, .button-primary, .button-warning{
+     border-radius: 15px;
+     height: 50px;
+     display: block;
+}
+ .button-danger{
+     background: linear-gradient(to right, #c9302c 50%, #EC6D82 50%);
+     background-size: 200% 100%;
+     background-position: right bottom;
+     transition: all .5s ease-out;
+     -webkit-transition: all 0.3s;
+     -moz-transition: all 0.3s;
+     transition: all 0.3s;
+}
+ .button-primary{
+     background: linear-gradient(to right, #286090 50%, #00AFEC 50%);
+     background-size: 200% 100%;
+     background-position: right bottom;
+     transition: all .5s ease-out;
+     -webkit-transition: all 0.3s;
+     -moz-transition: all 0.3s;
+     transition: all 0.3s;
+}
+ .button-warning{
+     background: linear-gradient(to right, #f0ad4e 50%, #FDEFF5 50%);
+     background-size: 200% 100%;
+     background-position: right bottom;
+     transition: all .5s ease-out;
+     -webkit-transition: all 0.3s;
+     -moz-transition: all 0.3s;
+     transition: all 0.3s;
+}
+ .button-danger:hover, .button-primary:hover, .button-warning:hover {
+     background-position: left bottom;
+     -webkit-transition: all 0.3s;
+     -moz-transition: all 0.3s;
+     transition: all 0.3s;
+}
+ .text-in-btn-danger a, .text-in-btn-primary a, .text-in-btn-warning a {
+     text-align: center;
+     font-size: 18px;
+     line-height: 50px;
+     color: #fff;
+     transition: all .6s ease-out;
+     display: block;
+}.text-in-btn-warning a{color: #333}
+ .text-in-btn-danger a:hover, .text-in-btn-primary a:hover, .text-in-btn-warning a:hover{
+    color: white;
+}
+/****************************************/
+/*animation button*/
+/****************************************/
+ h1.main-title{
+     padding: 70px 0px 50px 0;
+     text-align: center;
+     margin: 0;
+	 color: #EC6D82
+}
+h1.main-title a{
+	color: #EC6D82
+}
+/************************************************
+///////////////////////////////////////////////// 
+	Button Range
+/////////////////////////////////////////////////	
+*************************************************/
+.btn-rang{
+    background: #fff url("../icon/gown.png") 160px 8px / 38px 75px no-repeat;
+    border-radius: 30px;
+    color: #EC6D74;
+    float: left;
+    padding: 10px 35px 10px 45px;
+	width: 100%;
+	text-align: center;
+	font-size: 20px;
+	font-weight: normal
+}
+ .btn-rang:hover{
+	text-decoration: none;
+	color: #379FD3;
+	background: #EC6D74 url("../icon/gown.png") 160px -43px / 38px 80px no-repeat;
+/*	background: #EC6D74;*/
+	color: #fff;
+}
+ .btn-rang,
+ .btn-rang:hover{
+	-webkit-transition: all 0.5s ease 0s;
+	   -moz-transition: all 0.5s ease 0s;
+	    -ms-transition: all 0.5s ease 0s;
+	     -o-transition: all 0.5s ease 0s;
+	        transition: all 0.5s ease 0s;
+	
+}
+/************************************************
+///////////////////////////////////////////////// 
+	Button No Link
+/////////////////////////////////////////////////	
+*************************************************/
+
+.button-no-link{
+	width: 50%;
+	margin: 0 auto;
+	text-align: center;
+	background: #fff;
+	padding: 10px 0;
+	border-radius: 30px;
+	margin-bottom: 50px
+}
+.button-no-link span{
+	color: #ec6d82;
+	font-size: 18px;
+}
+/************************************************ ///////////////////////////////////////////////// Header ///////////////////////////////////////////////// *************************************************/
+ .floatingHeader{
+     position: fixed;
+     top: 0;
+     visibility: hidden;
+     width: 100%;
+     z-index: 99;
+     background: #fff;
+     height: 80px 
+}
+ .header .menu{
+     float: left;
+     height: 80px;
+     line-height: 80px;
+     margin-left: 80px 
+}
+
+.header .menu ul li a.active,
+#main_menu_desk li.active a,
+#amazine_menu_desk li.active a{
+	background: url('../icon/border-bottom.svg') center bottom / 100% 5px no-repeat;
+	
+	
+}
+
+
+ .header .menu ul li{
+     float: left;
+	 margin: 0 10px
+}
+ .header .menu ul li a{
+     color: #EC6D82;
+     font-weight: 500;
+     font-size: 16px;
+	 padding: 31px 15px
+}
+ .header .logo{
+     width: 110px;
+     height: 50px;
+     float: left;
+     margin-top: 15px 
+}
+ .header .contact-english{
+     background: #EC6D82;
+     width: 305px;
+     height: 80px;
+     float: right;
+     color: #fff;
+}
+ .header .contact-english span.recruitment{
+     width: 100%;
+     float: left;
+     text-align: center;
+     height: 40px;
+     line-height: 50px;
+     color: #fff;
+     font-size: 12px 
+}
+ .header .contact-english .blog{
+     width: 100%;
+     text-align: center;
+     height: 40px 
+}
+ .header .contact-english .blog a{
+     font-weight: normal;
+     color: #fff;
+	 font-size: 18px
+}
+ .header .contact-english .blog a.font{
+     font-family: 'Roboto', sans-serif !important;
+}
+ .header.custom .logo{
+    width: 250px
+}
+/****************************************/
+/*hamburger*/
+/****************************************/
+ .hamburger{
+     cursor: pointer;
+     float: right;
+     width: 50px;
+     line-height: 80px;
+     margin: 0px 15px 
+}
+ .hamburger img{
+     max-width: 100%;
+     height: auto;
+}
+/****************************************/
+/*Mmenu Mobile (Mobile Size)*/
+/****************************************/
+ .mm-clear::after, .mm-clear::before, .mm-close::after, .mm-close::before{
+     width: 13px !important;
+     height: 13px !important;
+}
+ .mm-close{
+     left: 5px !important;
+}
+ .mm-clear::before, .mm-close::before{
+     right: 10px !important;
+}
+ .mm-listview a{
+     color: #EC6D82 !important;
+     font-size: 14px !important;
+     letter-spacing: 3px;
+     font-family: 'Oxygen', sans-serif;
+}
+ .mm-listview a span{
+     color: #EC6D82;
+     font-size: 12px !important;
+     font-weight: normal;
+}
+ .mm-menu.mm-theme-white .mm-btn::after, .mm-menu.mm-theme-white .mm-btn::before{
+     border-color: #EC6D82 !important 
+}
+ .mm-clear::before, .mm-close::before{
+     right: 9px !important 
+}
+ .mm-opening .hamburger{
+     display: none 
+}
+ .mm-opening .contact-english{
+     margin-right: -15px !important 
+}
+ .mm-menu.mm-opened.mm-pagedim-black ~ #mm-blocker {
+     background: none !important;
+     -webkit-box-shadow: -4px 0px 14px 4px rgba(0,0,0,0.46);
+     box-shadow: -4px 0px 14px 4px rgba(0,0,0,0.46);
+}
+/************************************************ ///////////////////////////////////////////////// Blog footer ///////////////////////////////////////////////// *************************************************/
+ .footer{
+     background: #fff;
+     width: 100%;
+     float: left;
+     padding: 50px 0;
+     color: #EC6D82;
+}
+ .footer .logo{
+    float: left;
+     width: 110px;
+     height: 50px
+}
+ .footer .logo, .footer .socil{
+     margin-top: 10px 
+}
+ .footer .socil{
+     width: 40px;
+     height: 40px 
+}
+ .footer .address p{
+     text-align: left;
+     line-height: 24px;
+     font-weight: normal;
+     padding: 0;
+     margin: 0;
+     font-size: 14px;
+     font-family: 'Roboto', sans-serif !important;
+}
+ .footer .bottom-menu{
+     float: left;
+     margin-left: 30px 
+}
+ .footer .bottom-menu ul li{
+     float: left;
+     margin-left: 20px;
+}
+ .footer .bottom-menu ul li a{
+     color: #EC6D82;
+     font-weight: normal;
+     font-size: 16px 
+}
+ .footer .bottom-menu .copy-right{
+     float: left;
+     font-size: 16px;
+     padding-left: 20px;
+     font-family: 'Roboto', sans-serif !important;
+}
+/* scroll up */
+ .footer .scrollup{
+     width:50px;
+     height:50px;
+     position:fixed;
+     bottom: 44px;
+     right: 44px;
+     display:none;
+     z-index:5;
+     background:url(../icon/arrow-scrollup.png) center no-repeat rgba(236, 109, 130, 0.6);
+     border-radius:0 
+}
+ .footer .scrollup:hover{
+     background-color: #ec6d82 
+}
+ .footer .scrollup,.footer .scrollup:hover{
+     -webkit-transition:background-color .3s;
+     -moz-transition:background-color .3s;
+     -ms-transition:background-color .3s;
+     -o-transition:background-color .3s;
+     transition:background-color .3s 
+}
+/************************************************ ///////////////////////////////////////////////// Blog Responsive All Page ///////////////////////////////////////////////// *************************************************/
+ @media screen and (min-width: 768px){
+     .hamburger{
+         display: none !important;
+    }
+     .header .contact-english{
+        width: 225px;
+    }
+     .mobile{
+        display: none !important
+    }
+}
+/************************************************ ///////////////////////////////////////////////// Blog Mobile Size ///////////////////////////////////////////////// *************************************************/
+ @media screen and (max-width: 767px){
+    /* Header */
+     .hamburger{
+        width: 30px;
+        margin: 0
+    }
+     .header .logo{
+        margin-left: 0
+    }
+     .header.custom .contact-english{
+        display: none
+    }
+     .header .contact-english{
+        width: 185px;
+    }
+     .header .contact-english span.recruitment, .header .contact-english .blog a{
+        font-size: 14px;
+        font-weight: normal
+    }
+     .menu{
+         display: none !important;
+    }
+     .desktop{
+        display: none
+    }
+     .mobile{
+         display: block
+    }
+    
+	 
+	 /****************************************/
+   	 	/* Slider*/
+    /****************************************/
+     .box{
+		bottom: 50px !important;
+		width: 300px !important;
+		height: 300px !important;
+		top: auto !important
+	}
+	 .banner .box .inner .description{
+		 padding: 15px !important
+	 }
+	 .banner .box .inner .description h3{
+		 font-size: 20px !important;
+		 line-height: 40px !important
+	 }
+	 .jcslider .slick-dots{
+		 right: 0 !important
+	 }
+	 
+	/****************************************/
+   	 	/* latest-articles*/
+    /****************************************/
+	 .latest-articles .latest-4,
+	 .latest-articles .fixed-4{
+		 margin-bottom: 50px  !important
+	 }
+	 .latest-articles .fixed-4:last-of-type,
+	 .latest-articles .latest-4:last-of-type{
+		 margin-bottom: 0 !important
+	 }
+	 /*	 
+	 	categories
+	 */
+	 .categories .thum-left img{
+		 border-radius: 10px 10px 0 0 !important
+	 }
+	 
+	 
+	 
+	 
+	 /****************************************/
+    	/* Default Mobile Size*/
+    /****************************************/
+	 .button-no-link{
+		 width: 100%
+	 } 
+	 .detail-recruitments .btn-back-apply .back, .detail-recruitments .btn-back-apply .apply{
+		 margin-bottom: 15px !important;
+		 width: 100% !important
+	 }
+	 /****************************************/
+    	/* Detail Recruidment Mobile Size*/
+    /****************************************/
+	 .detail-recruitments .detail .margin-0{
+		 margin: 15px 0 !important
+	 }
+	 .detail-recruitments .detail .thumbnail img{
+		 border-radius: 15px !important
+	 }
+	 
+	 /****************************************/
+    	/* Blog Footer*/
+    /****************************************/
+	 .footer .scrollup{
+		 bottom: 0;
+		 right: 15px
+	 }
+}
+
+
+
+ @media screen and (min-width: 768px) and (max-width: 992px){
+     .header.custom .logo{
+        width: 240px
+    }
+     .header .menu{
+        margin-left: 15px
+    }
+     .header .menu ul li{
+        margin-right: 20px
+    }
+     .header .contact-english{
+        width: 185px
+    }
+}
+ 

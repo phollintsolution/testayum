@@ -1,0 +1,239 @@
+
+
+/************************************************
+///////////////////////////////////////////////// 
+	Blog content home page
+/////////////////////////////////////////////////	
+*************************************************/
+/************************************************
+	Hero Banner
+*************************************************/
+.slick-slide { outline: 0!important}
+.slick-slider:hover .slick-arrow {opacity: 1}
+.slick-slider .slick-arrow {opacity: 0}
+.jcslider.slick-slider:hover .slick-prev {left: 40px!important}
+.jcslider.slick-slider:hover .slick-next {right: 40px!important}
+.jcslider.slick-slider .slick-prev {left: -60px!important}
+.jcslider.slick-slider .slick-next {right: -60px!important
+}
+.slick-next::after, .slick-next::before, .slick-prev::after, .slick-prev::before{
+	background: #EC6D82 !important;
+}
+.jcslider .slick-dots > li > button{
+	background-color: rgba(255, 255, 255,.4) !important;
+	border:1px solid rgba(255, 255, 255,.4) !important;
+}
+.jcslider .slick-dots > li.slick-active > button{
+	background-color: #EC6D82 !important;
+	cursor: default;
+}
+
+.box{
+	width: 500px;
+	height: 500px;
+	border-radius: 50%;
+	background-color: #fff;
+	position: absolute;
+	top: 14%;
+	background: linear-gradient(45deg, #55C3F1, #FFFBC7);
+	z-index: 1;
+}
+.box .inner{
+	background: #fff;
+	width: 96%;
+	height: 96%;
+	left: 2%;
+	position: absolute;
+	top: 2%;
+	border-radius: 50%;
+	z-index: 9999;
+}
+.slide-mask{
+  width: 100%;
+  float: left;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  background: rgba(0,0,0,0.4);
+  overflow: hidden;
+}
+	
+.banner .box .inner .description {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+	padding: 60px;
+	text-align: center;
+	font-weight: normal;
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%)
+}
+.banner .box .inner .description h3{
+	color: #EC6D82;
+	font-size: 40px;
+	line-height: 50px;
+	padding-bottom: 20px
+}
+.banner .box .inner .description p{
+	color: #333;
+	font-size: 20px;
+}
+
+
+
+
+/****************************************/
+	/*List All Recruitments*/
+/****************************************/
+.list-all-recruitments{
+	background-color: #F5FBFE;
+	width: 100%;
+	float: left;
+	padding-bottom: 120px;
+	z-index: -2
+}
+.list-all-recruitments .custom{
+	margin-bottom: 50px
+}
+.list-all-recruitments .thumbnail img{
+	border-radius: 10px 10px 0 0;
+	width: 100%
+}
+.list-all-recruitments .description{
+	background: #fff;
+	padding: 0px 25px 30px 25px;
+	border-radius: 0 0 10px 10px;
+	color: #333
+}
+.list-all-recruitments .description h2{
+	padding-bottom: 15px;
+	padding-top: 20px;
+	font-weight: bold;
+	text-align: left;
+	color: #333;
+	margin: 0;
+	font-size: 16px;
+	letter-spacing: 1px;
+	line-height: 30px;
+}
+.list-all-recruitments .description ul.list li span{
+	color: #EC6D82;
+	margin-right: 15px;
+	font-weight: 600
+}
+.list-all-recruitments  .blog-list-item{
+     margin: 0;
+     position: relative;
+}
+.blog-list-item::before {
+     content: '';
+     width: 100%;
+     height: 100%;
+     position: absolute;
+     top: 0;
+     left: 50%;
+     -webkit-transform: translateX(-50%);
+     transform: translateX(-50%);
+     -webkit-transition: .2s;
+     transition: .2s;
+}
+.list-all-recruitments  .blog-list-item-thumbnail {
+     display: block;
+     text-decoration: none;
+     background: #ffffff;
+     -webkit-transition: -webkit-transform .2s;
+     transition: -webkit-transform .2s;
+     transition: transform .2s;
+     transition: transform .2s, -webkit-transform .2s;
+     position: relative;
+	 border-radius: 15px
+}
+.list-all-recruitments   .blog-list-item-thumbnail:hover {
+     -webkit-transform: translate3d(-8px, -8px, 0);
+     transform: translate3d(-8px, -8px, 0);
+}
+.list-all-recruitments  .blog-list-item:hover::before {
+	background: #EC6D82;
+	border-top-right-radius: 15px;
+	border-bottom-right-radius: 15px;
+	border-bottom-left-radius: 15px
+}
+
+/************************************************
+///////////////////////////////////////////////// 
+	List All Recruitments
+/////////////////////////////////////////////////	
+*************************************************/
+
+.latest-articles{
+	background-color: #FEF7FA;
+	width: 100%;
+	float: left;
+	padding-bottom: 100px;
+	z-index: -2
+}
+
+
+/************************************************
+///////////////////////////////////////////////// 
+	Fixed articles
+/////////////////////////////////////////////////	
+*************************************************/
+.latest-articles .fixed-4{
+	margin: 0
+}
+
+/************************************************
+///////////////////////////////////////////////// 
+	articles  by categories
+/////////////////////////////////////////////////	
+*************************************************/
+
+.categories{
+	margin-bottom: 30px
+}
+.categories .thum-left img{
+	width: 100%;
+	border-top-right-radius: 0;
+	border-bottom-left-radius: 10px;
+}
+.description-right{
+	padding-top: 15px
+}
+.description-right h2,
+.description-right p,
+.description-right .duration{
+	padding-left: 22px;
+	padding-right: 22px
+}
+.description-right h2 {
+	font-weight: bold;
+	text-align: left;
+	color: #333;
+	margin-bottom: 5px;
+	font-size: 16px;
+}
+.description-right .duration {
+    width: 100%;
+	color: #333;
+	font-size: 12px;
+}
+.description-right p {
+    line-height: 16px;
+    font-size: 13px;
+	color: #333;
+}
+
+/************************************************
+///////////////////////////////////////////////// 
+	business categories
+/////////////////////////////////////////////////	
+*************************************************/
+
+.business .categories:last-of-type,
+.culture .categories:last-of-type,
+.tips .categories:last-of-type,
+.blog .categories:last-of-type{
+	margin: 0
+}

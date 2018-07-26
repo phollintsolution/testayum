@@ -1,0 +1,1108 @@
+
+/************************************************
+///////////////////////////////////////////////// 
+	Blog Defaults
+/////////////////////////////////////////////////	
+*************************************************/
+body{
+	font-size: 16px;
+	line-height: 30px;
+/*	font-family: "Roboto", "游ゴシック", Roboto, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;*/
+	font-family: "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+	
+}
+
+.preload * { 
+	-webkit-transition: none !important;
+       -moz-transition: none !important;
+        -ms-transition: none !important;
+         -o-transition: none !important;
+            transition: none !important;
+}
+.pointer-events > a{ pointer-events: none; }
+textarea, input { 
+	outline: none; 
+	box-shadow:none;
+	-webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;  
+	-webkit-border-radius: 0;
+	   -moz-border-radius: 0;
+	        border-radius: 0;
+}
+
+p{font-size: 14px;padding: 0;margin: 0}
+img{width: 100%;}
+h1{
+	font-size: 25px;
+	color: #EC6D82;
+}
+ul,
+ul li{
+	padding: 0;
+	margin: 0;
+	list-style: none
+}
+img{width: 100%}
+a:active,
+input,
+textarea,
+a:focus,
+a[href],
+a:hover{ 
+	outline: none !important; 
+	text-decoration: none; 
+}
+
+.persist-area{
+	width: 100%;
+	float: left
+}
+.list-page-recruitments .list-all-recruitments h1.title,
+.list-all-recruitments h1.title,
+.company .detail-recruitments h1.title{
+	text-align: center;
+	padding: 50px 0 30px 0;
+}
+/************************************************
+///////////////////////////////////////////////// 
+	Header
+/////////////////////////////////////////////////	
+*************************************************/
+
+.floatingHeader{
+	position: fixed;
+	top: 0;
+	visibility: hidden;
+	width: 100%;
+	z-index: 99;
+	background: #fff;
+	height: 80px
+}
+.header{
+	position: fixed;
+	width: 100%;
+	z-index: 99;
+	background: #fff;
+	height: 80px;
+	float: left;
+	z-index: 999
+}
+.header .menu{
+	float: left;
+	height: 80px;
+	line-height: 80px;
+	margin-left: 80px
+}
+.header .menu ul li{
+	float: left;
+	margin-right: 30px
+}
+.header .menu ul li a{
+	color: #EC6D82;
+	font-weight: 500;
+	font-size: 16px
+}
+.header .logo{
+	width: 110px;
+	height: 50px;
+	float: left;
+	margin-top: 15px
+}
+.header .contact-english{
+	background: #EC6D82;
+	width: 305px;
+	height: 80px;
+	float: right;
+	color: #fff;
+}
+.header .contact-english span.recruitment{
+	width: 100%;
+	float: left;
+	text-align: center;
+	height: 40px;
+	line-height: 50px;
+	color: #fff;
+	font-size: 12px
+}
+.header .contact-english .blog{
+	width: 100%;
+	text-align: center;
+	height: 40px	
+}
+.header .contact-english .blog a{
+	font-weight: normal;
+	color: #fff;
+}
+.header .contact-english .blog a.font{
+	font-family: 'Roboto', sans-serif !important;
+}
+.header.custom .logo{width: 250px}
+/* 
+	humberger menu
+*/
+.hamburger{
+	cursor: pointer;
+    float: right;
+    width: 50px;
+	line-height: 80px;
+	margin: 0px 15px
+}
+.hamburger img{
+	max-width: 100%;
+	height: auto;
+}
+
+/* 
+	customize mmenu style
+*/
+.mm-clear::after, 
+.mm-clear::before, 
+.mm-close::after, 
+.mm-close::before{
+	width: 13px !important;
+	height: 13px !important;
+}
+.mm-close{
+	left: 5px !important;
+}
+.mm-clear::before, 
+.mm-close::before{
+	right: 10px !important;
+}
+.mm-listview a{
+	color: #EC6D82 !important;
+	font-size: 14px !important;
+	letter-spacing: 3px;
+	font-family: 'Oxygen', sans-serif;
+}
+.mm-listview a span{
+	color: #EC6D82;
+	font-size: 12px !important;
+	font-weight: normal;
+}
+.mm-menu.mm-theme-white .mm-btn::after, .mm-menu.mm-theme-white .mm-btn::before{
+	border-color: #EC6D82 !important
+}
+.mm-clear::before, .mm-close::before{
+	right: 9px !important
+}
+.mm-opening .hamburger{
+	display: none
+}
+.mm-opening .contact-english{
+	margin-right: -15px !important
+}
+.mm-menu.mm-opened.mm-pagedim-black ~ #mm-blocker {
+    background: none !important;
+-webkit-box-shadow: -4px 0px 14px 4px rgba(0,0,0,0.46); 
+box-shadow: -4px 0px 14px 4px rgba(0,0,0,0.46);
+}
+
+/************************************************
+///////////////////////////////////////////////// 
+	Blog content home page
+/////////////////////////////////////////////////	
+*************************************************/
+
+.section {
+    width: 100%;
+    padding: 50px 0
+}
+.no-padding {
+    padding: 0
+}
+.no-margin {
+    margin: 0
+}
+.slick-slide {
+    outline: 0!important
+}
+
+.content {
+    width: 100%;
+    float: left
+}
+
+.banner {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.slick-slider:hover .slick-arrow {
+    opacity: 1
+}
+.slick-slider .slick-arrow {
+    opacity: 0
+}
+.jcslider.slick-slider:hover .slick-prev {
+    left: 40px!important
+}
+.jcslider.slick-slider:hover .slick-next {
+    right: 40px!important
+}
+.jcslider.slick-slider .slick-prev {
+    left: -60px!important
+}
+.jcslider.slick-slider .slick-next {
+    right: -60px!important
+}
+.slick-next::after, .slick-next::before, .slick-prev::after, .slick-prev::before{
+	background: #EC6D82 !important;
+}
+.jcslider .slick-dots > li > button{
+	height: 18px !important;
+	background-color: rgba(255, 255, 255,.6) !important;
+	border:1px solid rgba(255, 255, 255,.6) !important;
+}
+.jcslider .slick-dots > li.slick-active > button{
+	background-color: #EC6D82 !important;
+	cursor: default;
+}
+.box{
+	width: 500px;
+	height: 500px;
+	border-radius: 50%;
+	background-color: #fff;
+	position: absolute;
+	top: 23%;
+	background: linear-gradient(45deg, #55C3F1, #FFFBC7);
+	z-index: 1;
+}
+.box .inner{
+	background: #fff;
+	width: 94%;
+	height: 94%;
+	left: 3%;
+	position: absolute;
+	top: 3%;
+	border-radius: 50%;
+	z-index: 9999;
+}
+.banner .box .inner .description {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+	padding: 60px;
+	text-align: center;
+	font-weight: normal;
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%)
+}
+.banner .box .inner .description h3{
+	color: #EC6D82;
+	font-size: 36px;
+	line-height: 50px
+}
+.banner .box .inner .description p{
+	color: #333;
+	font-size: 20px;
+}
+.hero-banner  .slick-next {
+	background: #fff url("../images/icon-next.png") no-repeat scroll center center;
+	border: medium none;
+	border-radius: 50%;
+	bottom: 30px;
+	color: transparent;
+	height: 50px;
+	position: absolute;
+	right: 120px;
+	width: 50px;
+}
+.hero-banner  .slick-prev {
+	background: #fff url("../images/icon-prv.png") no-repeat scroll center center;
+	border: medium none;
+	border-radius: 50%;
+	bottom: 30px;
+	color: transparent;
+	height: 50px;
+	position: absolute;
+	right: 190px;
+	width: 50px;
+	z-index: 2;
+}
+/*
+	List All Recruitments
+*/
+
+.list-all-recruitments{
+	background-color: #F5FBFE;
+	width: 100%;
+	float: left;
+	padding-bottom: 70px;
+	z-index: -2
+}
+.list-all-recruitments .thumbnail img{
+	border-radius: 10px 10px 0 0
+}
+.list-all-recruitments .description{
+	background: #fff;
+	padding: 0px 25px 30px 25px;
+	border-radius: 0 0 10px 10px;
+	color: #333
+}
+.list-all-recruitments .description h2{
+	padding-bottom: 15px;
+	padding-top: 20px;
+	font-weight: bold;
+	text-align: left;
+	color: #333;
+	margin: 0;
+	font-size: 16px;
+	letter-spacing: 1px;
+	line-height: 30px;
+}
+.list-all-recruitments .description ul.list li span{
+	color: #EC6D82;
+	margin-right: 15px;
+	font-weight: 600;
+	
+}
+.list-all-recruitments .blog-recruitments {
+     margin: 0 0 20px -32px;
+	float: left;
+}
+.list-all-recruitments .blog-recruitments .col {
+     padding: 0 0 35px 37px
+}
+.list-all-recruitments .blog-recruitments .blog-list-item{
+     margin: 0 0 40px;
+}
+.list-all-recruitments .blog-recruitments .blog-list-item{
+     margin: 0 0 15px;
+     position: relative;
+}
+
+.blog-list-item::before {
+     content: '';
+     width: 100%;
+     height: 100%;
+     position: absolute;
+     top: 0;
+     left: 50%;
+     -webkit-transform: translateX(-50%);
+     transform: translateX(-50%);
+     -webkit-transition: .2s;
+     transition: .2s;
+}
+
+.list-all-recruitments .blog-recruitments .blog-list-item-thumbnail {
+     display: block;
+     text-decoration: none;
+     background: #ffffff;
+     -webkit-transition: -webkit-transform .2s;
+     transition: -webkit-transform .2s;
+     transition: transform .2s;
+     transition: transform .2s, -webkit-transform .2s;
+     position: relative;
+	 border-radius: 15px
+}
+.list-all-recruitments .blog-recruitments  .blog-list-item-thumbnail:hover {
+     -webkit-transform: translate3d(-8px, -8px, 0);
+     transform: translate3d(-8px, -8px, 0);
+}
+.list-all-recruitments .blog-recruitments .blog-list-item:hover::before {
+	background: #EC6D82;
+	border-top-right-radius: 15px;
+	border-bottom-right-radius: 15px;
+	border-bottom-left-radius: 15px
+}
+/****************************************/
+	/*animation button*/
+/****************************************/
+
+.button-danger,
+.button-primary,
+.button-warning{
+	border-radius: 15px;
+	height: 50px;
+	display: block;
+	
+}
+.button-danger{
+	background: linear-gradient(to right, #c9302c 50%, #EC6D82 50%);
+	background-size: 200% 100%;
+	background-position: right bottom;
+	transition: all .5s ease-out;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.button-primary{
+	background: linear-gradient(to right, #00AFEC 50%, #286090 50%);
+	background-size: 200% 100%;
+	background-position: right bottom;
+	transition: all .5s ease-out;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.button-warning{
+	background: linear-gradient(to right, #f0ad4e 50%,  #FDEFF5 50%);
+	background-size: 200% 100%;
+	background-position: right bottom;
+	transition: all .5s ease-out;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.button-danger:hover,
+.button-primary:hover,
+.button-warning:hover
+{
+	background-position: left bottom;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.text-in-btn-danger a,
+.text-in-btn-primary a,
+.text-in-btn-warning a
+{
+  text-align: center;
+  font-size: 18px;
+  line-height: 50px; 
+  color: #fff;
+  transition: all .6s ease-out;
+  display: block;
+}
+
+.text-in-btn-danger a:hover,
+.text-in-btn-primary a:hover,
+.text-in-btn-warning a:hover{color: white;}
+
+/*
+	latest-articles
+*/
+.latest-articles{
+	background-color: #FEF7FA;
+	width: 100%;
+	float: left;
+	padding-top: 0;
+	padding-bottom: 85px
+}
+.latest-articles h1{
+	text-align: center;
+	padding: 50px 0 30px 0;
+}
+.latest-articles.list-all-recruitments .blog{
+	border-radius: 0;
+	border: 0;
+}
+
+.latest-articles.list-all-recruitments .blog .description span{
+	color: #333;
+	font-size: 12px;
+}
+
+/*
+categories
+*/
+.latest-articles.list-all-recruitments .categories .thumbnail{
+	background: #fff;
+	width: 100%;
+	float: left;
+	padding-left: 0;
+	margin-bottom: 30px;
+}
+.latest-articles.list-all-recruitments .categories .tips,
+.latest-articles.list-all-recruitments .categories .blog{
+	margin-top: -30px
+}
+.latest-articles.list-all-recruitments .categories .thumbnail img{
+	width: 100%;
+	height: auto;
+	border-radius: 0
+}
+.latest-articles.list-all-recruitments .categories .thumbnail a{color: #333}
+.latest-articles.list-all-recruitments .categories .thumbnail .margin-0{
+	margin-left: -15px;
+}
+.latest-articles.list-all-recruitments .categories .thumbnail .padding-0{
+	padding-left: 7px
+}
+.latest-articles.list-all-recruitments .categories .thumbnail .description{
+	padding: 0;
+}
+.latest-articles.list-all-recruitments .categories .thumbnail .description p{
+	line-height: 16px;
+	font-size: 13px
+}
+.latest-articles.list-all-recruitments .categories .thumbnail .description h2{
+	padding-top: 10px;
+	padding-bottom: 0;
+	margin: 0;
+	font-size: 14px
+}
+.latest-articles.list-all-recruitments .categories .thumbnail .description .duration{
+	float: left;
+	width: 100%;
+	margin-top: -5px
+}
+.latest-articles.list-all-recruitments .categories .thumbnail .description span.date,
+.latest-articles.list-all-recruitments .categories .thumbnail .description  span.name-tag{
+	font-size: 12px;color:#333; 
+}
+.latest-articles.list-all-recruitments .categories .thumbnail{
+	background: #fff !important;
+	width: 100% !important;
+	float: left !important;
+	border-radius: 10px !important;
+}
+
+/************************************************
+///////////////////////////////////////////////// 
+	Blog content List Page Recruitments
+/////////////////////////////////////////////////	
+*************************************************/
+/*
+	List Page Recruitments
+*/
+.list-page-recruitments .recruitment-banner{
+	width: 100%;
+	float: left;
+	padding-top: 80px;
+	background: linear-gradient(-1deg, #55C3F1, #FFFBC7);
+}
+.list-page-recruitments .recruitment-banner .banner-left{
+	width: 30%;
+	float: left;
+	position: relative;
+}
+.list-page-recruitments .recruitment-banner .banner-left h1{
+	color: #fff;
+	font-weight: bold;
+	letter-spacing: 2px;
+	font-size: 62px;
+	text-align: center;
+	margin-top: 40%;
+}
+.list-page-recruitments .recruitment-banner .banner-right{
+	width: 70%;
+	float: left;
+	
+}
+.list-page-recruitments .recruitment-banner .banner-right img{
+	width: 100%;
+	height: 100%
+}
+.list-page-recruitments .pagination{
+	text-align: center;
+	padding: 75px 0 50px 0
+}
+.list-page-recruitments .pagination ul{
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+}
+.list-page-recruitments .pagination ul li{
+	float: left;
+	text-align: center;
+	padding: 0 10px
+}
+.list-page-recruitments .pagination ul li.active a{
+	color: #1D2088;
+	font-family: 'Roboto', sans-serif !important;
+}
+.list-page-recruitments .pagination ul li.next a{background: none}
+.list-page-recruitments .pagination ul li a{
+	font-size: 24px;
+	font-weight: 500;
+	padding: 5px 2px;
+	text-align: center;
+	color: #EC6D82
+}
+
+/************************************************
+///////////////////////////////////////////////// 
+	Blog content Detail Page Recruitments
+/////////////////////////////////////////////////	
+*************************************************/
+.detail-recruitments{
+	background: #F5FBFE;
+	margin-top: 80px;
+	width: 100%;
+	float: left;
+	padding-top: 70px
+	
+}
+.detail-recruitments .detail .padding-0{
+	    padding-left: 0;
+}
+.detail-recruitments .detail .margin-0{
+	    margin-left: -15px
+}
+.detail-recruitments .detail{
+	background: #fff;
+	width: 100%;
+	float: left;
+	padding-left: 0;
+	border-radius: 15px;
+	margin-bottom: 50px
+}
+.detail-recruitments .detail .thumbnail{
+	width: 100%;
+	height: 100%;
+	float: left
+}
+.detail-recruitments .detail .description{
+	padding: 15px 0;
+	margin: 0
+}
+.detail-recruitments .detail .description ul.list li{
+	font-size: 24px;
+	line-height: 50px;
+	
+}
+.detail-recruitments .detail .description ul.list li span{
+	color: #EC6D82;
+	margin-right: 15px;
+	font-weight: 500;
+}
+.detail-recruitments .detail .description h2,
+.detail-recruitments .detail .description ul{
+	margin-left: 15px
+}
+
+.detail-recruitments .detail .description h2{
+	font-size: 29px;
+	line-height: 50px;
+	
+}
+.detail-recruitments .detail .thumbnail img{
+	min-width:  100%;
+	height: auto;
+	border-radius: 15px 0 0 15px
+}
+/*
+	explanation
+*/
+.detail-recruitments .explanation {
+	background: #fff;
+	width: 100%;
+	float: left;
+	padding: 30px;
+	border-radius: 15px;
+	margin-bottom: 50px
+	
+}
+.detail-recruitments .explanation .blog{
+	width: 100%;
+	float: left;
+	margin-bottom: 50px
+}
+.detail-recruitments .explanation .blog.salary ul li,
+.detail-recruitments .explanation .blog.work ul li,
+.detail-recruitments .explanation .blog.position ul li,
+.detail-recruitments .explanation .blog.place ul li{
+	list-style: none
+}
+.detail-recruitments .explanation h2{color: #EC6D82; font-weight: normal; font-size: 16px}
+.detail-recruitments .explanation h2,
+.detail-recruitments .explanation  ul{
+	padding: 0;
+	margin: 0
+}
+.detail-recruitments .explanation  ul li{ list-style: disc; padding: 0;margin: 0; font-size: 16px}
+.detail-recruitments .explanation  ul li.none-list{
+	list-style: none;
+	margin-left: -23px;
+}
+.detail-recruitments .explanation  ul li.none-list.top{
+	margin-top: 25px
+}
+/*
+	Button Back and Apply
+*/
+.detail-recruitments .btn-back-apply{
+	width: 100%;
+	float: left;
+	margin-bottom: 50px
+}
+.detail-recruitments .btn-back-apply .back a{color: #333; font-weight: normal; font-size: 20px}
+.detail-recruitments .btn-back-apply .apply a{color: #fff; font-weight: normal; font-size: 20px}
+
+.detail-recruitments .btn-back-apply .back,
+.detail-recruitments .btn-back-apply .apply{
+	border-radius: 15px;
+	width: 50%;
+	margin: 0 auto
+}
+
+.detail-recruitments .rang-recruitment{
+	float: left;
+	width: 100%;
+	margin-bottom: 50px;
+	padding: 0
+}
+
+.rang-recruitment .btn-rang{
+    background: #fff url("../icon/gown.png") no-repeat 34% 15px;
+    border-radius: 30px;
+    color: #EC6D74;
+    float: left;
+    padding: 10px 35px 10px 45px;
+	width: 100%;
+	text-align: center;
+	font-size: 20px;
+	font-weight: normal
+}
+.rang-recruitment .btn-rang:hover{
+	text-decoration: none;
+	color: #379FD3;
+	background: #fff url("../icon/gown.png") no-repeat 34% -40px;
+}
+.rang-recruitment .btn-rang,
+.rang-recruitment .btn-rang:hover{
+	border: 1px solid #fff;
+	-webkit-transition: all 0.5s ease 0s;
+	   -moz-transition: all 0.5s ease 0s;
+	    -ms-transition: all 0.5s ease 0s;
+	     -o-transition: all 0.5s ease 0s;
+	        transition: all 0.5s ease 0s;
+}
+/*
+	Rang Recruitment 
+*/
+
+.detail-recruitments .rang-recruitment.list-all-recruitments .blog .border-radius_1,
+.detail-recruitments .rang-recruitment.list-all-recruitments .blog .border-radius_2,
+.detail-recruitments .rang-recruitment.list-all-recruitments .blog .border-radius_3,
+.detail-recruitments .rang-recruitment.list-all-recruitments .blog .border-radius_4{
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	border-radius: 50%;
+	left: -15px;
+	top: -20px;
+	
+}
+.detail-recruitments .rang-recruitment.list-all-recruitments .blog .border-radius_1 span,
+.detail-recruitments .rang-recruitment.list-all-recruitments .blog .border-radius_2 span,
+.detail-recruitments .rang-recruitment.list-all-recruitments .blog .border-radius_3 span,
+.detail-recruitments .rang-recruitment.list-all-recruitments .blog .border-radius_4 span{
+	position: absolute;
+	text-align: center;
+	font-size: 30px;
+	top: 10px;
+	left: 32%
+}
+.detail-recruitments .rang-recruitment.list-all-recruitments .blog .border-radius_1{
+	background: #FFE100;
+	z-index: 1
+}
+.detail-recruitments .rang-recruitment.list-all-recruitments .blog .border-radius_2{
+	background: #C9BEB8;
+	z-index: 1
+}
+.detail-recruitments .rang-recruitment.list-all-recruitments .blog .border-radius_3{
+	background: #F6AE54;
+	z-index: 1
+}
+.detail-recruitments .rang-recruitment.list-all-recruitments .blog .border-radius_4{
+	background: #F5B090;
+	z-index: 1
+}
+
+
+/************************************************
+///////////////////////////////////////////////// 
+	Blog content Company copy from detail Recruitments
+/////////////////////////////////////////////////	
+*************************************************/
+.company .company-banner{
+	width: 100%;
+	float: left;
+	padding-top: 80px;
+	background: linear-gradient(-1deg, #55C3F1, #FFFBC7);
+}
+
+.company .company-banner .banner-left{
+	width: 30%;
+	float: left;
+	position: relative;
+}
+.company .company-banner .banner-left h1{
+	color: #fff;
+	font-weight: bold;
+	letter-spacing: 2px;
+	font-size: 62px;
+	text-align: center;
+	margin-top: 40%;
+}
+.company .company-banner .banner-right{
+	width: 70%;
+	float: left;		
+	position: relative
+}
+.company .company-banner .banner-right h1{
+	position: absolute;
+	left: 43%;
+	margin-top: 20%;
+	color: #fff;
+	font-weight: bold;
+	letter-spacing: 2px;
+	font-size: 62px;
+	z-index: 99
+}
+.company .company-banner .banner-right img{
+	width: 100%;
+	height: 100%
+}
+.company .company-banner .banner-right .mask{
+	width: 100%;
+	height: 100%;
+	top: 0;
+	bottom: 0;
+	position: absolute;
+	background: rgba(35, 25, 22,0.6);
+	left: 0;
+	right: 0;
+
+}
+.company .information-company.detail-recruitments{
+	padding: 0;
+	margin: 0
+}
+.company .information-company.detail-recruitments .blog .description ul li.none-list{
+	list-style: none;
+	margin-left: -23px
+}
+.company .information-company.detail-recruitments .blog .description ul li.none-list.top{
+	margin-top: 25px
+}
+
+.company .information-company.detail-recruitments .blog.place .map{
+	background: pink;
+	width: 100%;
+	float: left;
+	height: 400px;
+	margin-top: 50px
+}
+.company .information-company.detail-recruitments .blog.place .map img{
+	width: 100%;
+	height: 100%
+}
+
+/************************************************
+///////////////////////////////////////////////// 
+	Blog content apply copy from detail Recruitments
+/////////////////////////////////////////////////	
+*************************************************/
+.apply-recruitment .detail-recruitments .btn-apply-recruitment{
+	width: 50%;
+	margin: 0 auto;
+	text-align: center;
+	background: #fff;
+	padding: 10px 0;
+	border-radius: 30px;
+	margin-bottom: 50px
+}
+.apply-recruitment .detail-recruitments .btn-apply-recruitment span{
+	color: #ec6d82;
+	font-size: 18px;
+}
+.apply-recruitment .detail-recruitments .explanation .form-apply .blog{
+	margin-bottom: 30px
+}
+.apply-recruitment .detail-recruitments .explanation .form-apply .blog h2{color: #333}
+.apply-recruitment .detail-recruitments .explanation .form-apply .blog .description input[type='text']{
+	border-left: 0;
+	border-right: 0;
+	border-top:  0;
+}
+.apply-recruitment .detail-recruitments .explanation .form-apply .blog .description select{
+	border-left: 0;
+	border-right: 0;
+	border-top:  0;
+	width: 150px;
+	background: #fff;
+}
+.apply-recruitment .detail-recruitments .explanation .form-apply .blog .description span.languages{
+	float: left;
+	width: 100%
+}
+.apply-recruitment .detail-recruitments .explanation .form-apply .blog .description{
+	margin-bottom: 15px
+}
+.apply-recruitment .detail-recruitments .explanation .form-apply .blog .description input[type='radio']{
+	margin-right: 15px
+}
+.apply-recruitment .detail-recruitments .explanation .form-apply .blog h2.title{
+	text-align: center;
+	color: #EC6D82
+}
+.apply-recruitment .detail-recruitments .explanation .form-apply [type='submit']{
+	color: #fff;
+	border:none;
+	background: none;
+	width: 100%;
+	font-weight: normal;
+	font-size: 18px
+}
+
+/*
+	apply-confirm
+*/
+.apply-confirm.apply-recruitment .form-apply .confirm.required-item.explanation{
+	width: 100%;
+	float: left
+}
+.apply-confirm.apply-recruitment .form-apply .confirm.required-item.explanation .blog{
+	margin-bottom: 15px
+}
+
+/*
+	apply-success
+*/
+.apply-success.detail-recruitments{
+	float: left;
+	width: 100%;
+	margin-bottom: 0;
+	padding-bottom: 0
+}
+
+.apply-success.detail-recruitments .rang-recruitment.list-all-recruitments{
+	margin-bottom: 0
+}
+.apply-success.detail-recruitments .application-complete{
+	width: 50%;
+	margin: 0 auto 50px auto;
+	text-align: center;
+	background: #fff;
+	padding: 10px 0;
+	border-radius: 30px;
+}
+
+.apply-success.detail-recruitments .application-complete span{
+	color: #ec6d82;
+	font-size: 20px;
+	font-weight: bold;
+}
+.apply-success.detail-recruitments .btn-back-recruitment.btn-back-apply .apply a.apply{
+	width: 100%;
+	margin: 0 auto 50px auto
+}
+.apply-success.detail-recruitments .success.explanation .blog{
+	margin-bottom: 15px;
+	padding: 0 50px
+}
+
+/************************************************
+///////////////////////////////////////////////// 
+	Blog footer
+/////////////////////////////////////////////////	
+*************************************************/
+.footer{
+	background: #fff;
+	width: 100%;
+	float: left;
+	padding: 30px 0;
+	color: #EC6D82;
+}
+.footer .logo{float: left; width: 110px; height: 50px}
+.footer .logo,
+.footer .socil{
+	margin-top: 10px
+}
+.footer .socil{
+	width: 40px;
+	height: 40px
+}
+.footer .address p{
+	text-align: left;
+	line-height: 24px;
+	font-weight: normal;
+	padding: 0;
+	margin: 0;
+	font-size: 14px;
+	font-family: 'Roboto', sans-serif !important;
+	
+}
+.footer .bottom-menu{
+	float: left;
+	margin-left: 30px
+}
+.footer .bottom-menu ul li{
+	float: left;
+	margin-left: 20px;
+}
+.footer .bottom-menu ul li a{
+	color: #EC6D82;
+	font-weight: normal;
+	font-size: 16px
+}
+.footer .bottom-menu .copy-right{
+	float: left;
+	font-size: 16px;
+	padding-left: 20px;
+}
+
+/*
+	scroll up
+*/
+.footer .scrollup{
+    width:50px;
+    height:50px;
+    position:fixed;
+    bottom: 44px;
+    right:10px;
+    display:none;
+    z-index:5;
+    background:url(../icon/arrow-scrollup.png) center no-repeat rgba(236, 109, 130, 0.6);
+    border-radius:0
+}
+.footer .scrollup:hover{
+    background-color: #ec6d82
+}
+.footer .scrollup,.footer .scrollup:hover{
+    -webkit-transition:background-color .3s;
+    -moz-transition:background-color .3s;
+    -ms-transition:background-color .3s;
+    -o-transition:background-color .3s;
+    transition:background-color .3s
+}
+/************************************************
+///////////////////////////////////////////////// 
+	Blog  Responsive All Page
+/////////////////////////////////////////////////	
+*************************************************/
+@media screen and (min-width: 768px){
+	.hamburger{ display: none !important; }
+	.header .contact-english{width: 225px;}
+	.mobile{display: none !important}
+}
+/************************************************
+///////////////////////////////////////////////// 
+	Blog Mobile Size
+/////////////////////////////////////////////////	
+*************************************************/
+@media screen and (max-width: 767px){
+	/*	
+		Header
+	*/
+	.hamburger{width: 30px;margin: 0}
+	.header .logo{margin-left: 0}
+	.menu{ display: none !important; }
+	.desktop{display: none}
+	.mobile{ display: block}
+	.footer{padding: 15px 0}
+	.footer .logo{
+		margin: 0
+	}
+	.footer .scrollup{
+		bottom: 0
+	}
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 992px){
+	.header.custom .logo{width: 240px}
+	.header .menu{margin-left: 15px}
+	.header .menu ul li{margin-right: 20px}
+	.header .contact-english{width: 185px}
+}

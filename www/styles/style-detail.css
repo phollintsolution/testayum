@@ -1,0 +1,258 @@
+.header{
+	position: fixed;
+	width: 100%;
+	float: left;
+	background: #fff;
+	z-index: 999
+}
+/************************************************
+///////////////////////////////////////////////// 
+	Blog content Detail Page Recruitments
+/////////////////////////////////////////////////	
+*************************************************/
+
+.detail-recruitments{
+	background: #F5FBFE;
+	width: 100%;
+	float: left;
+	padding-top: 150px
+	
+}
+.detail-recruitments .detail .padding-0{
+	    padding-left: 0;
+}
+.detail-recruitments .detail .margin-0{
+	    margin-left: -15px
+}
+.detail-recruitments .detail{
+	background: #fff;
+	width: 100%;
+	float: left;
+	padding-left: 0;
+	border-radius: 15px;
+	margin-bottom: 50px
+}
+.detail-recruitments .detail .thumbnail{
+	width: 100%;
+	height: 100%;
+	float: left
+}
+
+.detail-recruitments .detail .description{
+	padding: 40px 0;
+	margin: 0
+}
+.detail-recruitments .detail .description ul.list li{
+	font-size: 24px;
+}
+.detail-recruitments .detail .description ul.list li span{
+	color: #EC6D82;
+	margin-right: 15px;
+	font-weight: 500;
+}
+.detail-recruitments .detail .description h2,
+.detail-recruitments .detail .description ul{
+	margin-left: 30px
+}
+.detail-recruitments .detail .description ul.list li,
+.detail-recruitments .detail .description h2{
+	line-height: 40px
+}
+.detail-recruitments .detail .description h2{
+	font-size: 29px;
+	margin-bottom: 20px
+}
+.detail-recruitments .detail .thumbnail img{
+	min-width:  100%;
+	height: auto;
+	border-radius: 15px 0 0 15px
+}
+
+/*	explanation */
+.detail-recruitments .explanation {
+	background: #fff;
+	width: 100%;
+	float: left;
+	padding: 50px 50px 0 50px;
+	border-radius: 15px;
+	margin-bottom: 50px
+	
+}
+.detail-recruitments .explanation .blog{
+	width: 100%;
+	float: left;
+	margin-bottom: 50px
+}
+.detail-recruitments .explanation .blog.salary ul li,
+.detail-recruitments .explanation .blog.work ul li,
+.detail-recruitments .explanation .blog.position ul li,
+.detail-recruitments .explanation .blog.place ul li{
+	list-style: none
+}
+.detail-recruitments .explanation h2{color: #EC6D82; font-weight: normal; font-size: 16px}
+.detail-recruitments .explanation h2,
+.detail-recruitments .explanation  ul{
+	padding: 0;
+	margin: 0
+}
+.detail-recruitments .explanation  ul li{ list-style: disc; padding: 0;margin: 0; font-size: 16px}
+.detail-recruitments .explanation  ul li.none-list{
+	list-style: none;
+	margin-left: -23px;
+}
+.detail-recruitments .explanation  ul li.none-list.top{
+	margin-top: 25px
+}
+/************************************************
+///////////////////////////////////////////////// 
+	Button Back and repply
+/////////////////////////////////////////////////	
+*************************************************/
+.detail-recruitments .btn-back-apply{
+	width: 100%;
+	float: left;
+	margin-bottom: 50px
+}
+.detail-recruitments .btn-back-apply .back a{color: #333; font-weight: normal; font-size: 20px}
+.detail-recruitments .btn-back-apply .apply a{color: #fff; font-weight: normal; font-size: 20px}
+
+.detail-recruitments .btn-back-apply .back,
+.detail-recruitments .btn-back-apply .apply{
+	border-radius: 15px;
+	width: 50%;
+	margin: 0 auto
+}
+
+.detail-recruitments {
+	float: left;
+	width: 100%;
+}
+/************************************************
+///////////////////////////////////////////////// 
+	List all recruitments
+/////////////////////////////////////////////////	
+*************************************************/
+
+
+.list-all-recruitments{
+	background-color: #F5FBFE;
+	width: 100%;
+	float: left;
+	z-index: -2;
+	padding: 50px 0 20px 0 
+}
+.list-all-recruitments .custom{
+	margin-bottom: 50px
+}
+.list-all-recruitments .thumbnail img{
+	border-radius: 10px 10px 0 0;
+	width: 100%
+}
+.list-all-recruitments .description{
+	background: #fff;
+	padding: 0px 25px 30px 25px;
+	border-radius: 0 0 10px 10px;
+	color: #333
+}
+.list-all-recruitments .description h2{
+	padding-bottom: 15px;
+	padding-top: 20px;
+	font-weight: bold;
+	text-align: left;
+	color: #333;
+	margin: 0;
+	font-size: 16px;
+	letter-spacing: 1px;
+	line-height: 30px;
+}
+.list-all-recruitments .description ul.list li span{
+	color: #EC6D82;
+	margin-right: 15px;
+	font-weight: 600
+}
+.list-all-recruitments  .blog-list-item{
+     margin: 0;
+     position: relative;
+}
+.blog-list-item::before {
+     content: '';
+     width: 100%;
+     height: 100%;
+     position: absolute;
+     top: 0;
+     left: 50%;
+     -webkit-transform: translateX(-50%);
+     transform: translateX(-50%);
+     -webkit-transition: .2s;
+     transition: .2s;
+}
+.list-all-recruitments  .blog-list-item-thumbnail {
+     display: block;
+     text-decoration: none;
+     background: #ffffff;
+     -webkit-transition: -webkit-transform .2s;
+     transition: -webkit-transform .2s;
+     transition: transform .2s;
+     transition: transform .2s, -webkit-transform .2s;
+     position: relative;
+	 border-radius: 15px
+}
+.list-all-recruitments   .blog-list-item-thumbnail:hover {
+     -webkit-transform: translate3d(-8px, -8px, 0);
+     transform: translate3d(-8px, -8px, 0);
+}
+.list-all-recruitments  .blog-list-item:hover::before {
+	background: #EC6D82;
+	border-top-right-radius: 15px;
+	border-bottom-right-radius: 15px;
+	border-bottom-left-radius: 15px
+}
+
+
+/************************************************
+///////////////////////////////////////////////// 
+	Range Recruitments
+/////////////////////////////////////////////////	
+*************************************************/
+
+.detail-recruitments .list-all-recruitments .border-radius_1,
+.detail-recruitments .list-all-recruitments .border-radius_2,
+.detail-recruitments .list-all-recruitments .border-radius_3,
+.detail-recruitments .list-all-recruitments .border-radius_4{
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	border-radius: 50%;
+	left: -15px;
+	top: -20px;
+	
+}
+.detail-recruitments .list-all-recruitments .border-radius_1 span,
+.detail-recruitments .list-all-recruitments .border-radius_2 span,
+.detail-recruitments .list-all-recruitments .border-radius_3 span,
+.detail-recruitments .list-all-recruitments .border-radius_4 span{
+	position: absolute;
+	text-align: center;
+	font-size: 30px;
+	top: 10px;
+	left: 32%;
+	font-family: 'Roboto', sans-serif !important;
+	color: #333;
+	font-weight: bold
+}
+.detail-recruitments .list-all-recruitments .border-radius_1{
+	background: #FFE100;
+	z-index: 1
+}
+.detail-recruitments .list-all-recruitments .border-radius_2{
+	background: #C9BEB8;
+	z-index: 1
+}
+.detail-recruitments .list-all-recruitments .border-radius_3{
+	background: #F6AE54;
+	z-index: 1
+}
+.detail-recruitments .list-all-recruitments .border-radius_4{
+	background: #F5B090;
+	z-index: 1
+}

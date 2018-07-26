@@ -1,0 +1,156 @@
+.header{
+	position: fixed;
+	width: 100%;
+	float: left;
+	background: #fff;
+	z-index: 999
+}
+/************************************************
+///////////////////////////////////////////////// 
+	session Banner
+/////////////////////////////////////////////////	
+*************************************************/
+.session-banner{
+	background: linear-gradient(-1deg, #55C3F1, #FFFBC7);
+	float: left;
+	width: 100%;
+	position: relative;
+	padding-top: 80px;
+}
+.session-banner h1.title{
+	text-align: center;
+	margin: 58% auto 42% auto;
+	font-size: 50px;
+	color: #fff
+}
+.session-banner img{
+	width: 100%;
+	height: 100%
+}
+.session-banner .mask{
+	width: 100%;
+	height: 100%;
+	top: 0;
+	bottom: 0;
+	position: absolute;
+	background: rgba(35, 25, 22,0.6);
+	left: 0;
+	right: 0;
+
+}
+.session-banner .title-mask{
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 39%;
+	color: #fff;
+	font-size: 50px;
+	text-align: center
+}
+/************************************************
+///////////////////////////////////////////////// 
+	Blog content Company copy from detail Recruitments
+/////////////////////////////////////////////////	
+*************************************************/
+
+
+/************************************************
+///////////////////////////////////////////////// 
+	Blog content Detail Page Recruitments
+/////////////////////////////////////////////////	
+*************************************************/
+.information-company{
+	background: #F5FBFE;
+	width: 100%;
+	float: left;
+	padding-bottom: 70px
+	
+}
+.information-company .detail .padding-0{
+	    padding-left: 0;
+}
+.information-company .detail .margin-0{
+	    margin-left: -15px
+}
+.information-company .detail{
+	background: #fff;
+	width: 100%;
+	float: left;
+	padding-left: 0;
+	border-radius: 15px;
+	margin-bottom: 50px
+}
+.information-company .detail .thumbnail{
+	width: 100%;
+	height: 100%;
+	float: left
+}
+.information-company .detail .description{
+	padding: 15px 0;
+	margin: 0
+}
+.information-company .detail .description ul.list li{
+	font-size: 24px;
+	line-height: 50px;
+	
+}
+.information-company .detail .description ul.list li span{
+	color: #EC6D82;
+	margin-right: 15px;
+	font-weight: 500;
+}
+.information-company .detail .description h2,
+.information-company .detail .description ul{
+	margin-left: 15px
+}
+
+.information-company .detail .description h2{
+	font-size: 29px;
+	line-height: 50px;
+	
+}
+.information-company .detail .thumbnail img{
+	min-width:  100%;
+	height: auto;
+	border-radius: 15px 0 0 15px
+}
+/*	explanation */
+.information-company .explanation {
+	background: #fff;
+	width: 100%;
+	float: left;
+	padding: 50px;
+	border-radius: 15px;
+	
+}
+.information-company .explanation .blog{
+	width: 100%;
+	float: left;
+}
+.information-company .explanation .blog.salary ul li,
+.information-company .explanation .blog.work ul li,
+.information-company .explanation .blog.position ul li,
+.information-company .explanation .blog.place ul li{
+	list-style: none
+}
+.information-company .explanation h2{color: #EC6D82; font-weight: normal; font-size: 16px}
+.information-company .explanation h2,
+.information-company .explanation  ul{
+	padding: 0;
+	margin: 0
+}
+.information-company .explanation  ul li{ list-style: disc; padding: 0;margin: 0; font-size: 16px}
+.information-company .explanation  ul li.none-list{
+	list-style: none;
+	margin-left: -23px;
+}
+.information-company .explanation  ul li.none-list.top{
+	margin-top: 25px
+}
+.information-company .blog.place .map{
+	background: pink;
+	width: 100%;
+	float: left;
+	height: 400px;
+	margin-top: 50px
+}

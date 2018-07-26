@@ -1,0 +1,158 @@
+.header{
+	position: fixed;
+	width: 100%;
+	float: left;
+	background: #fff;
+	z-index: 999
+}
+/************************************************
+///////////////////////////////////////////////// 
+	Detail Page Recruitments
+/////////////////////////////////////////////////	
+*************************************************/
+
+.detail-recruitments{
+	background: #F5FBFE;
+	width: 100%;
+	float: left;
+	padding-top: 150px;
+	padding-bottom: 70px
+	
+}
+.detail-recruitments .detail .padding-0{
+	    padding-left: 0;
+}
+.detail-recruitments .detail .margin-0{
+	    margin-left: -15px
+}
+.detail-recruitments .detail{
+	background: #fff;
+	width: 100%;
+	float: left;
+	padding-left: 0;
+	border-radius: 15px;
+	margin-bottom: 50px
+}
+.detail-recruitments .detail .thumbnail{
+	width: 100%;
+	height: 100%;
+	float: left
+}
+
+.detail-recruitments .detail .description{
+	padding: 40px 0;
+	margin: 0
+}
+.detail-recruitments .detail .description ul.list li{
+	font-size: 24px;
+}
+.detail-recruitments .detail .description ul.list li span{
+	color: #EC6D82;
+	margin-right: 15px;
+	font-weight: 500;
+}
+.detail-recruitments .detail .description h2,
+.detail-recruitments .detail .description ul{
+	margin-left: 30px
+}
+.detail-recruitments .detail .description ul.list li,
+.detail-recruitments .detail .description h2{
+	line-height: 40px
+}
+.detail-recruitments .detail .description h2{
+	font-size: 29px;
+	margin-bottom: 20px
+}
+.detail-recruitments .detail .thumbnail img{
+	min-width:  100%;
+	height: auto;
+	border-radius: 15px 0 0 15px
+}
+/************************************************
+///////////////////////////////////////////////// 
+	Blog content apply 
+/////////////////////////////////////////////////	
+*************************************************/
+h2.required-item{
+	text-align: center;
+	color: #EC6D82;
+	font-size: 20px !important;
+	margin-bottom: 30px !important
+}
+/*= input focus effects css
+=========================== */
+:focus{outline: none;}
+.col-3{float: left; width: 90%; margin: 0px auto; position: relative;} /* necessary to give position: relative to parent. */
+input[type="text"]{width: 100%; box-sizing: border-box; letter-spacing: 1px;}
+.effect-1{border: 0; padding: 0; border-bottom: 1px solid #ccc;}
+.effect-1 ~ .focus-border{position: absolute; bottom: 0; left: 0; width: 0; height: 2px; background-color: #3399FF; transition: 0.4s;}
+.effect-1:focus ~ .focus-border{width: 100%; transition: 0.4s;}
+
+.apply-recruitment .explanation .blog .description p{
+	font-size: 16px;
+	color: #9fa0a0
+}
+.apply-recruitment .explanation {
+	background: #fff;
+	width: 100%;
+	float: left;
+	padding: 50px;
+	border-radius: 15px;
+	margin-bottom: 50px
+	
+}
+.apply-recruitment .explanation .blog{
+	width: 100%;
+	float: left;
+	margin-bottom: 30px
+}
+.apply-recruitment .explanation h2{color: #EC6D82; font-weight: normal; font-size: 16px}
+.apply-recruitment .explanation h2,
+.apply-recruitment .explanation  ul{
+	padding: 0;
+	margin: 0
+}
+.apply-recruitment .explanation  ul li{ list-style: disc; padding: 0;margin: 0; font-size: 16px}
+.apply-recruitment .explanation  ul li.none-list{
+	list-style: none;
+	margin-left: -23px;
+}
+.apply-recruitment .explanation  ul li.none-list.top{
+	margin-top: 25px
+}
+.apply-recruitment .explanation .blog h2{color: #333}
+.apply-recruitment .explanation .blog .description input[type='text']{
+	border-left: 0;
+	border-right: 0;
+	border-top:  0;
+}
+.apply-recruitment .explanation .blog .description input[type='radio']{
+	margin-right: 15px;
+	width: 20px;
+	height: 20px;
+    cursor: pointer;
+}
+input[type='submit']{
+	color: #fff;
+	border:none;
+	background: none;
+	width: 100%;
+	font-weight: normal;
+	font-size: 18px
+}
+
+.apply-recruitment .explanation .description select{
+	border-left: 0;
+	border-right: 0;
+	border-top:  0;
+	width: 150px;
+	background: #fff;
+}
+.apply-recruitment .explanation .description span.languages{
+	float: left;
+	width: 100%;
+	margin-bottom: 10px
+}
+.apply-recruitment .explanation .blog .description{
+	margin-bottom: 15px
+}

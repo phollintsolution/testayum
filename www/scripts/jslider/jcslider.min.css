@@ -1,0 +1,456 @@
+.jcslider.fithieght, .jcslider:not(.fithieght) {
+	margin: 0 auto;
+	position: relative;
+	overflow: hidden
+}
+.jcslider .slick-slide img, .jcslider:not(.fithieght) {
+	width: 100%;
+	max-width: 1600px
+}
+.jcslider.fithieght {
+	width: 100%
+}
+.desktop .jcslider .slick-slide { 
+/*	background-attachment: fixed;*/
+}
+.jcslider .slick-slide {
+	position: relative;
+	width: 100%;
+/*	background-size: cover;
+	background-position: center*/
+}
+.jcslider.fithieght .slick-slide {
+	height: calc(100vh - 80px) !important;
+	float: left
+}
+.jcslider:not(.fithieght) .slick-slide {
+	height: 100%
+}
+.jcslider .slick-slide .caption-wrapper {
+	top: 0;
+	bottom: 0;
+	left: 38px;
+	right: 160px;
+	position: absolute;
+	width: calc(100% - 320px);
+	overflow: hidden
+}
+.caption {
+	width: 70%;
+	z-index: 2;
+	position: absolute
+}
+.caption.ytop {
+	top: 100px
+}
+.caption.ybottom {
+	bottom: 100px
+}
+.caption.ycenter {
+	top: 70%;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	transform: translateY(-50%)
+}
+.caption.xleft {
+	left: 0
+}
+.caption.xright {
+	right: 0
+}
+.caption.xcenter {
+	left: 0
+}
+.caption.txtleft {
+	text-align: left
+}
+.caption.txtright {
+	text-align: right
+}
+.caption .jbtn, .caption.txtcenter {
+	text-align: center;
+	background-color: rgba(10,76,139,0.5);
+}
+.caption.txtleft .jbtn {
+	left: 0
+}
+.caption.txtright .jbtn {
+	right: 0;
+	float: right
+}
+.caption.txtcenter .jbtn {
+	left: 0;
+}
+
+@media (min-width:1400px) {
+.caption {
+	width: 60%
+}
+.caption.xcenter {
+	left: 20%
+}
+}
+.caption h3 {
+	font-size: 38px;
+	line-height: 40px;
+	color: #fff;
+	margin-bottom: 10px;
+	padding-top: 8px;
+}
+.caption p {
+	font-size: 18px;
+	line-height: 28px;
+	color: #fff
+}
+.caption.txtshadow h3, .caption.txtshadow p {
+	text-shadow: 1px 1px 1px rgba(0,0,0,.5)
+}
+.caption .jbtn {
+	width: 120px;
+	height: 40px;
+	float: left;
+	color: #fff;
+	margin: 15px 0 0;
+	position: relative;
+	line-height: 40px;
+	font-size: 18px;
+	background-color: #333;
+	text-decoration: none
+}
+.caption .jbtn, .caption .jbtn:hover {
+	-webkit-transition: background-color .3s;
+	-moz-transition: background-color .3s;
+	-ms-transition: background-color .3s;
+	-o-transition: background-color .3s;
+	transition: background-color .3s
+}
+.caption .jbtn[href=""] {
+	display: none
+}
+.jcslider.no-dot .slick-dots, .jcslider.no-np .slick-arrow {
+	display: none!important
+}
+
+@media (max-width:768px) {
+.caption h3, .caption p {
+	text-align: center!important
+}
+.jcslider .slick-slide .caption-wrapper {
+	width: calc(100% - 30px);
+	left: 15px;
+	right: 15px;
+	text-align: center!important
+}
+.caption {
+	width: 100%;
+	margin: 0 auto!important;
+	left: 0!important;
+	right: 0!important
+}
+.caption.ytop {
+	top: 30px
+}
+.caption.ybottom {
+	bottom: 50px
+}
+.caption h3 {
+	font-size: 28px;
+	line-height: 28px
+}
+.caption p {
+	font-size: 20px;
+	line-height: 20px
+}
+.caption .jbtn {
+	left: 50%!important;
+	margin-left: -60px
+}
+.jcslider .slick-next, .jcslider .slick-prev {
+	display: none!important
+}
+}
+.jcslider .slick-next, .jcslider .slick-prev {
+	border: none;
+	width: 60px;
+	height: 90px;
+	z-index: 1;
+	top: 50%;
+	margin: -40px 0 0;
+	position: absolute;
+	color: transparent;
+	cursor: pointer;
+	background: 0 0!important
+}
+.slick-next.active, .slick-next:active, .slick-next:focus, .slick-prev.active, .slick-prev:active, .slick-prev:focus {
+	outline: 0;
+	-webkit-box-shadow: none;
+	box-shadow: none
+}
+.jcslider .slick-next:hover, .jcslider .slick-prev:hover {
+	background-image: url(arrow-hover.html)
+}
+.jcslider .slick-next, .jcslider .slick-next:hover {
+	right: 40px;
+	background-position: -80px 0
+}
+.jcslider .slick-prev, .jcslider .slick-prev:hover {
+	left: 40px;
+	background-position: 0 0
+}
+.jcslider .slick-disabled {
+	cursor: default
+}
+.jcslider .slick-next, .jcslider .slick-next:hover, .jcslider .slick-prev, .jcslider .slick-prev:hover {
+	-webkit-transition: all .3s;
+	-moz-transition: all .3s;
+	-ms-transition: all .3s;
+	-o-transition: all .3s;
+	transition: all .3s
+}
+.slick-next:after, .slick-next:before, .slick-prev:after, .slick-prev:before {
+	content: '';
+	position: absolute;
+	background: #fff;
+	height: 2px;
+	width: 50px;
+	top: 50%;
+	left: 5px;
+	-webkit-transition: all .2s ease-in-out;
+	transition: all .2s ease-in-out
+}
+.slick-next:before, .slick-prev:before {
+	margin-top: -22px
+}
+.slick-next:after, .slick-prev:after {
+	margin-top: 22px
+}
+.slick-next:hover:before, .slick-prev:hover:before {
+	margin-top: -18px
+}
+.slick-next:hover:after, .slick-prev:hover:after {
+	margin-top: 18px
+}
+.slick-prev {
+	left: -7px;
+	left: -.7rem
+}
+.slick-prev:before {
+	-webkit-transform: rotate(-60deg);
+	-ms-transform: rotate(-60deg);
+	transform: rotate(-60deg)
+}
+.slick-prev:after {
+	-webkit-transform: rotate(60deg);
+	-ms-transform: rotate(60deg);
+	transform: rotate(60deg)
+}
+.slick-prev:hover:before {
+	-webkit-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	transform: rotate(-45deg)
+}
+.slick-prev:hover:after {
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg)
+}
+.slick-next {
+	right: -7px;
+	right: -.7rem
+}
+.slick-next:before {
+	-webkit-transform: rotate(60deg);
+	-ms-transform: rotate(60deg);
+	transform: rotate(60deg)
+}
+.slick-next:after {
+	-webkit-transform: rotate(-60deg);
+	-ms-transform: rotate(-60deg);
+	transform: rotate(-60deg)
+}
+.slick-next:hover:before {
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg)
+}
+.slick-next:hover:after {
+	-webkit-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	transform: rotate(-45deg)
+}
+.jcslider .slick-dots {
+	width: 100%;
+	height: 20px;
+	list-style: none;
+	bottom: 30px;
+	position: absolute;
+	text-align: center
+}
+.jcslider .slick-dots>li {
+	display: inline
+}
+.jcslider .slick-dots>li>button {
+	width: 14px;
+	height: 14px;
+	margin: 0 4px;
+	border: 1px solid rgba(255,255,255,.3);
+	border-radius: 50%;
+	text-indent: -9999px;
+	overflow: hidden;
+	cursor: pointer;
+	background-color: rgba(255,255,255,.3);
+	outline: 0
+}
+.jcslider .slick-dots>li.slick-active>button {
+	background-color: rgba(255,255,255,1);
+	cursor: default
+}
+.jcslider .slick-dots>li.slick-active>button, .jcslider .slick-dots>li>button {
+	-webkit-transition: background-color .3s;
+	-moz-transition: background-color .3s;
+	-ms-transition: background-color .3s;
+	-o-transition: background-color .3s;
+	transition: background-color .3s
+}
+
+@media (max-width:768px) {
+.jcslider .slick-dots {
+	bottom: 5px
+}
+.jcslider .slick-dots>li>button {
+	width: 12px;
+	height: 12px
+}
+}
+.jcslider .animated {
+	-khtml-opacity: 0;
+	-moz-opacity: 0;
+	opacity: 0;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter: alpha(opacity=0);
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both
+}
+.jcslider .activate {
+	-khtml-opacity: 1;
+	-moz-opacity: 1;
+	opacity: 1;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	filter: alpha(opacity=100)
+}
+@-webkit-keyframes jFadeInDown {
+from {
+opacity:0;
+-webkit-transform:translate3d(0, -100%, 0);
+transform:translate3d(0, -100%, 0)
+}
+100% {
+opacity:1;
+-webkit-transform:none;
+transform:none
+}
+}
+@keyframes jFadeInDown {
+from {
+opacity:0;
+-webkit-transform:translate3d(0, -100%, 0);
+transform:translate3d(0, -100%, 0)
+}
+100% {
+opacity:1;
+-webkit-transform:none;
+transform:none
+}
+}
+.jcslider .jFadeInDown {
+	-webkit-animation-name: jFadeInDown;
+	animation-name: jFadeInDown
+}
+@-webkit-keyframes jFadeInRight {
+from {
+opacity:0;
+-webkit-transform:translate3d(100%, 0, 0);
+transform:translate3d(100%, 0, 0)
+}
+100% {
+opacity:1;
+-webkit-transform:none;
+transform:none
+}
+}
+@keyframes jFadeInRight {
+from {
+opacity:0;
+-webkit-transform:translate3d(100%, 0, 0);
+transform:translate3d(100%, 0, 0)
+}
+100% {
+opacity:1;
+-webkit-transform:none;
+transform:none
+}
+}
+.jcslider .jFadeInRight {
+	-webkit-animation-name: jFadeInRight;
+	animation-name: jFadeInRight
+}
+@-webkit-keyframes jFadeInUp {
+from {
+opacity:0;
+-webkit-transform:translate3d(0, 100%, 0);
+transform:translate3d(0, 100%, 0)
+}
+100% {
+opacity:1;
+-webkit-transform:none;
+transform:none
+}
+}
+@keyframes jFadeInUp {
+from {
+opacity:0;
+-webkit-transform:translate3d(0, 100%, 0);
+transform:translate3d(0, 100%, 0)
+}
+100% {
+opacity:1;
+-webkit-transform:none;
+transform:none
+}
+}
+.jcslider .jFadeInUp {
+	-webkit-animation-name: jFadeInUp;
+	animation-name: jFadeInUp
+}
+@-webkit-keyframes jFadeInLeft {
+from {
+opacity:0;
+-webkit-transform:translate3d(-100%, 0, 0);
+transform:translate3d(-100%, 0, 0)
+}
+100% {
+opacity:1;
+-webkit-transform:none;
+transform:none
+}
+}
+@keyframes jFadeInLeft {
+from {
+opacity:0;
+-webkit-transform:translate3d(-100%, 0, 0);
+transform:translate3d(-100%, 0, 0)
+}
+100% {
+opacity:1;
+-webkit-transform:none;
+transform:none
+}
+}
+.jcslider .jFadeInLeft {
+	-webkit-animation-name: jFadeInLeft;
+	animation-name: jFadeInLeft
+}
